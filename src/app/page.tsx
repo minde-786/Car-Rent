@@ -1,113 +1,215 @@
-import Image from "next/image";
+import React from 'react'
+import Image from 'next/image'
+import CarCard from '@/component/card';
+import { Car } from "../../type/index";
+import Link from 'next/link';
 
-export default function Home() {
+
+function page() {
+
+
+
+  const cars: Car[] = [
+    {
+      id: 1,
+      name: 'Koenigsegg',
+      
+      type: 'Sport',
+      image: '/aa.png',
+      fuel: 90,
+      transmission: 'Manual',
+      capacity: 2,
+      price: 99,
+    },
+    {
+      id: 2,
+      name: 'Nissan GT - R',
+      
+      type: 'Sport',
+      image: '/1.png',
+      fuel: 80,
+      transmission: 'Manual',
+      capacity: 4,
+      price: 80,
+    },
+    {
+      id: 3,
+      name: 'Rolls-Royce',
+    
+      type: 'Sport',
+      image: '/2.png',
+      fuel: 70,
+      transmission: 'Manual',
+      capacity: 6,
+      price: 96,
+    },
+    {
+      id: 4,
+      name: 'Nissan GT - R',
+      
+      type: 'Sport',
+      image: '/1.png',
+      fuel: 80,
+      transmission: 'Manual',
+      capacity: 4,
+      price: 80,
+    },
+    {
+      id: 5,
+      name: 'AllNewRush',
+      
+      type: 'SUV',
+      image: '/5.png',
+      fuel: 70,
+      transmission: 'Manual',
+      capacity: 6,
+      price: 72.00,
+    },
+    {
+      id: 6,
+      name: 'CR-V',
+      
+      type: 'SUV',
+      image: '/9.png',
+      fuel: 80,
+      transmission: 'Manual',
+      capacity: 6,
+      price: 80.00,
+    },
+    {
+      id: 7,
+      name: 'All New Terios',
+      
+      type: 'SUV',
+      image: '/8.png',
+      fuel: 90,
+      transmission: 'Manual',
+      capacity: 6,
+      price: 74,
+    },
+    {
+      id: 8,
+      name: 'CR-V',
+      
+      type: 'SUV',
+      image: '/9.png',
+      fuel: 80,
+      transmission: 'Manual',
+      capacity: 6,
+      price: 80.00,
+    },
+    {
+      id: 9,
+      name: 'MG ZX Exclusice',
+      
+      type: 'Hatchback',
+      image: '/7.png',
+      fuel: 80,
+      transmission: 'Electric',
+      capacity: 4,
+      price: 76,
+    },
+    {
+      id: 10,
+      name: 'New MGZS',
+    
+      type: 'Hatchback',
+      image: '/6.png',
+      fuel: 90,
+      transmission: 'Electric',
+      capacity: 6,
+      price: 80,
+    },
+    {
+      id: 11,
+      name: 'MG ZX Excite',
+      
+      type: 'Hatchback',
+      image: '/7.png',
+      fuel: 90,
+      transmission: 'Electric',
+      capacity: 4,
+      price: 74,
+    },
+    {id: 12,
+    name: 'New MGZS',
+    
+    type: 'Hatchback',
+    image: '/6.png',
+    fuel: 90,
+    transmission: 'Electric',
+    capacity: 6,
+    price: 80,
+  },
+
+  ];
+
+
+
+
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
+    <div className='  bg-slate-100 h- '>
+      <div className=' lg:grid grid-cols-2  gap-7 py-4 mr-6 mx-4 '>
+      <h1 className='bg-blue-400 lg:w-[580px] lg:h-[320px] py-[32px] px-[64] rounded-md mx-5 '>
+        <p className='text-2xl text-white px-4 text-pretty'>The Best Platform <br></br>for Car Rental</p>
+        <p className='text-xs text-white py-3 px-4'>Ease of doing a car rental safely and<br></br> reliably. Of course at a low price.</p>
+        <Link href='/Rentalinfo'><button className='bg-blue-700 px-4 py-2 mt-3 mx-4 rounded '>Rent Now</button></Link>
         <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+        src='/aa.png'
+        alt='web image' width={606} height={316}
+        className='px-36 py-4'
+        /></h1>
+      <h2 className='bg-blue-600 rounded-md mx-5 lg:w-[580px] lg:h-[320px] py-[32px] my-6 lg:my-0 '>
+       <p className='text-2xl text-white px-4 text-pretty'>Easy way to rent a<br></br> car at a low price</p>
+       <p className='text-xs text-white py-3 px-4'>Providing cheap car rental services <br></br>and safe and comfortable facilities.</p>
+      
+       <Link href='//Rentalinfo'><button className='bg-blue-400 px-6 py-2 mt-3 mx-4 rounded '>Rent Now</button></Link>
+       <Image
+        src='/image 8.png'
+        alt='web image' width={606} height={316}
+        className='px-36 py-2'
+        /></h2></div>
+<p className='lg:flex'><Image
+ src='/h.png'
+ alt='web image' width={606} height={136}
+/>
+<Image 
+src='/99.png'
+alt='arrow'  width={80} height={40} 
+className=''/>
+<Image
+ src='/a.png'
+ alt='web image' width={606} height={136}
+/></p>
+<h1 className='flex justify-between py-2'>
+  <p className='text-xs px-3 text-slate-500'>Popular Car</p>
+  <p className='text-blue-600 text-xs px-4'>view all</p>
+</h1>
+    <div className="min-h-screen bg-gray-100 p-6">
+      {/* <h1 className="text-3xl font-bold text-center text-gray-800 mb-8">
+        
+      </h1> */}
+
+      {/* Car Grid */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        {cars.map((car) => (
+          <CarCard key={car.id} car={car} />
+        ))}
       </div>
+    </div>
+  
+<h1 className='text-center '>
+  <button className='bg-blue-600 px-2 py-2 rounded'> Show more cars</button> <span className='flex justify-end text-slate-500 text-sm '>120 cars</span></h1>
+</div>
 
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+)
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
+} 
+export default page
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  );
-}
+
+
+
+
+
