@@ -5,29 +5,19 @@ import BookingCard from '@/component/login'
 import Link from 'next/link'
 
 function Rentalinfo() {
-  const Booking: Booking[] = [
+  const Booking : Booking[] = [
     {
       type:'Location',
-      option1:'select city' ,
-      option2:'Karachi' ,
+      option1:'select city',
+      option2:'Karachi',
       option3:'Lahore' ,
       option4: 'Skardu',
-      option5:'Islamabad' ,
+      option5:'Islamabad',
       option6: 'Quetta',
       
     },
   
-    // {
-    //  type:'Date',
-    //  option1:'select Date' ,
-    //  option2:'dec 2024' ,
-    //  option3:'january 2025' ,
-    //  option4: 'Febuary2025',
-    //  option5:'March2025' ,
-    //  option6: 'Appril2025',
-
-   //}
-   ,
+   
     {
      type:'  Time',
     option1:'select Time' ,
