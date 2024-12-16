@@ -199,7 +199,7 @@ className=''/>
     </div>
   
 <h1 className='text-center '>
-  <button className='bg-blue-600 px-2 py-2 rounded'> Show more cars</button> <span className='flex justify-end text-slate-500 text-sm '>120 cars</span></h1>
+  <Link href='/Carlist'><button className='bg-blue-600 px-2 py-2 rounded'> Show more cars</button> <span className='flex justify-end text-slate-500 text-sm '>120 cars</span></Link></h1>
 </div>
 
 )
