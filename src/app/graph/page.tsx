@@ -84,7 +84,7 @@ function Graph() {
         href="https://www.google.com/maps/place/Karakoram+Rent+a+Car+Services/@29.7214381,60.7031733,5z/data=!4m10!1m2!2m1!1srental+car!3m6!1s0x38e4638cf908db21:0x3ccb8987ddf4432e!8m2!3d35.2892539!4d75.623296!15sCgpyZW50YWwgY2FykgERY2FyX3JlbnRhbF9hZ2VuY3ngAQA!16s%2Fg%2F11g6mj1fgc?entry=ttu&g_ep=EgoyMDI1MDExNS4wIKXMDSoASAFQAw%3D%3D" // Replace this with your Instagram profile link
         target="_blank"
         rel="noopener noreferrer"> <Image 
-        src='/maps.png'
+        src='/Maps.png'
         alt='map review' width={486} height={20} className='py-4 border border-gray-100 mt-16 mb-10 h-72'></Image> </Link></p>
           </div>
 
