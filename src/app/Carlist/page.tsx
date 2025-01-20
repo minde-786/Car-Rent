@@ -186,7 +186,68 @@ function Carlist() {
 
 
       <div>
-<p className='flex p-5'><Image
+      <div className='flex justify-around'>
+      <div>
+      <div className='py-3 px-2 font-bold'>Pick - Up</div>
+      <div className='lg:grid grid-cols-3'>
+      <h1><p className='px-2 font-bold'>Location</p>
+      <select className='text-slate-500  border-slate-100' >
+         <option>select location</option>
+         <option></option>
+         <option></option>
+         </select>
+         </h1>
+
+         <h1><p  className='px-2 font-bold '>Date</p>
+      <select className='text-slate-500 border border-slate-100 shadow-lg '>
+         <option>select date</option>
+         <option></option>
+         <option></option>
+         </select>
+         </h1>
+
+
+         <h1><p  className='px-2 font-bold'>Time</p>
+      <select className='text-slate-500 border border-slate-100' >
+         <option>select time</option>
+         <option>07:00 pm</option>
+         <option></option>
+         </select>
+         </h1>
+         </div>
+</div>
+<div>
+
+<div className='py-4 px-2 font-bold '>Drop - Off</div>
+      <div className='lg:grid grid-cols-3'>
+      <h1><p className='px-2 font-bold'>Location</p>
+      <select className='text-slate-500  border-slate-100' >
+         <option>slect location</option>
+         <option>Kota Semarang</option>
+         <option></option>
+         </select>
+         </h1>
+
+         <h1><p  className='px-4  font-bold'>Date</p>
+      <select className='text-slate-500  border-slate-100'>
+         <option>slect date</option>
+         <option>21 July 2022</option>
+         <option></option>
+         </select>
+         </h1>
+
+
+         <h1><p  className='px-2 font-bold'>Time</p>
+      <select className='text-slate-500 border border-slate-100' >
+         <option>select time</option>
+         <option>10:00 pm</option>
+         <option></option>
+         </select>
+         </h1> </div></div>
+         </div>
+
+
+{/* <p className='flex p-5'><Image
  src='/h.png'
  alt='web image' width={606} height={136}
 />
@@ -197,7 +258,7 @@ className=''/>
 <Image
  src='/a.png'
  alt='web image' width={606} height={136}
-/></p>
+/></p> */}
 
 
     
